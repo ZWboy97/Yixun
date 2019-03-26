@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Yixun</string>
+    <string name="title_mapiditem_list">Items</string>
+    <string name="title_mapiditem_detail">MapIDItem Detail</string>
+    <string name="title_mapid_list">请选择地图</string>
+    <string name="title_mapid_detail">MapId Detail</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_message_list">messages</string>
+    <string name="title_message_detail">message Detail</string>
+    <string name="title_broadcastmessage_list">所有广播通知</string>
+    <string name="title_broadcastmessage_detail">消息详情</string>
+    <string name="title_loction_list">收藏的位置</string>
+    <string name="title_loction_detail">位置信息</string>
+    <string name="title_activity_info_in_group">InfoInGroupActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_guidance_list">活动引导</string>
+    <string name="title_guidance_detail">活动引导详细信息</string>
+
+    <string name="menu_settings">设置</string>
+    <string name="step_number">步\t数</string>
+    <string name="use_time">用\t时</string>
+    <string name="distance">行 程</string>
+    <string name="calories">热 量</string>
+    <string name="velocity">速 度</string>
+    <string name="zero">0</string>
+    <string name="double_zero">0.0</string>
+    <string name="calories_zero">0.0</string>
+    <string name="velocity_zero">0.0</string>
+    <string name="km">m</string>
+    <string name="calorie">卡路里</string>
+    <string name="kilometer_per_hour">m/s</string>
+    <string name="start">开始</string>
+    <string name="pause">暂停</string>
+    <string name="cancel">清零</string>
+    <string name="daily">今日累积</string>
+    <string name="image_star">image_star</string>
+    <string name="sunday">星期天</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="month">月\t</string>
+    <string name="day">日</string>
+    <string name="todo">TODO</string>
+    <string name="information">说明</string>
+    <string name="settings_title">设置</string>
+    <string name="sensitivity">灵敏度：</string>
+    <string name="low">低</string>
+    <string name="high">高</string>
+    <string name="sensitivity_info">灵敏度越高,对身体的动作越敏感.请调节灵敏度来适应不同的体形,路面等因素.</string>
+    <string name="step_length">步长:</string>
+    <string name="cm">厘米</string>
+    <string name="setp_length_info_1">为估算行走的距离和速度，请输入步长</string>
+    <string name="setp_length_info_2">(得出的速度和距离较为粗略，仅供参考)</string>
+    <string name="weigth">体重:</string>
+    <string name="kg">公斤</string>
+    <string name="weight_info">为计算消耗的热量(卡路里)，请入体重。</string>
+    <string name="save">保存</string>
+    <string name="cancle">取消</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

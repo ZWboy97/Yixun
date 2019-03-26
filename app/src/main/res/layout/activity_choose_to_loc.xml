@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jackchance.yixun.UI.LocateInMap.MapSelectActivity">
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/select_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/select_message"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="请点击模型选择您的位置"
+            android:textSize="16dp"/>
+
+        <include layout="@layout/layouy_mapselect_bottom"
+            android:id="@+id/mapselect_bottom_layout"
+            android:visibility="gone"/>
+    </com.fengmap.android.map.FMMapView>
+
+</RelativeLayout>

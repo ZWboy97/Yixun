@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jackchance.yixun.UI.LocateInMap.MapSelectActivity">
+
+
+    <com.jackchance.yixun.ZAssets.Widget.SearchBar
+        android:id="@+id/locmap_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"/>
+
+    <com.fengmap.android.map.FMMapView
+        android:layout_below="@id/locmap_search_bar"
+        android:id="@+id/select_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/select_message"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="请在地图中选择您的位置" />
+
+        <include layout="@layout/layouy_mapselect_bottom"
+            android:id="@+id/mapselect_bottom_layout"
+            android:visibility="gone"/>
+    </com.fengmap.android.map.FMMapView>
+
+
+
+    <include
+        layout="@layout/bottom_list_analysis"
+        android:id="@+id/bottom_analysis_list"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="200dp"/>
+
+
+</RelativeLayout>

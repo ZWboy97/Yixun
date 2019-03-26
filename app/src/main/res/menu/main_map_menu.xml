@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jackchance.yixun.UI.Navigation.MapUI.MainMapActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/icon_search"
+        android:title="位置搜索"
+
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_star"
+        android:icon="@drawable/icon_star"
+        android:title="我的收藏"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_nearby"
+        android:icon="@drawable/icon_nearby"
+        android:title="周边推荐"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action"
+        android:title="操作1"
+        app:showAsAction="never"/>
+
+</menu>

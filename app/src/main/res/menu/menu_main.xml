@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".UI.MainActivity">
+    <item android:id="@+id/main_menu_settings"
+        android:title="用户设置"
+        android:orderInCategory="100"
+        android:icon="@drawable/settings"/>
+    <item android:id="@+id/main_menu_landout"
+        android:title="注销登陆"
+        android:orderInCategory="100"
+        android:icon="@drawable/landout"
+        />
+    <item android:id="@+id/main_menu_quit"
+        android:title="退出应用"
+        android:orderInCategory="100"
+        android:icon="@drawable/quitout"/>
+</menu>

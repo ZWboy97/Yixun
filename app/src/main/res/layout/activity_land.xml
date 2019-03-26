@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EasyFind"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="易寻"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/account_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="@dimen/height_20_160"
+            android:hint="账号"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:et_labelTextColor="@color/white"
+            app:et_dividerColor="@color/weixin_bgcolor"
+            app:et_dividerErrorColor="@color/red"
+            app:et_dividerHeight="@dimen/width_1_160"
+            app:et_dividerPadding="@dimen/height_1_160"
+            app:et_labelEnable="true"
+            app:et_labelTextSize="10sp"
+            app:et_supportMaxChars="11"
+            app:et_supportMode="charCounter"
+            app:et_supportTextColor="@color/weixin_bgcolor"
+            app:et_supportTextErrorColor="@color/red"
+            />
+
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_weight="1"
+            android:hint="密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:et_dividerColor="@color/weixin_bgcolor"
+            app:et_dividerErrorColor="@color/red"
+            app:et_labelTextColor="@color/white"
+            app:et_dividerHeight="@dimen/width_1_160"
+            app:et_dividerPadding="@dimen/height_1_160"
+            app:et_labelEnable="true"
+            app:et_labelTextSize="10sp"
+            app:et_supportTextColor="@color/weixin_bgcolor"
+            app:et_supportTextErrorColor="@color/red"
+            />
+
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/remember_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Material.Drawable.CheckBox"
+                app:cbd_strokeColor="@color/setting_switch_color_selector"                    />
+            <TextView
+                android:id="@+id/id_addnote_permission_tip"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="下次自动登陆"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/bnt_login"
+            style="@style/Material.Drawable.Ripple.Wave.Light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_10_160"
+            android:layout_marginLeft="@dimen/width_22_160"
+            android:layout_marginRight="@dimen/width_22_160"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/common_btn_bg"
+            android:text="点 击 登 录"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:rd_enable="true"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_3_160"
+        android:layout_marginLeft="@dimen/width_22_160"
+        android:layout_marginRight="@dimen/width_22_160"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/reset_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/height_3_160"
+            android:paddingTop="@dimen/height_3_160"
+            android:text="找回密码"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/reg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/height_3_160"
+            android:paddingTop="@dimen/height_3_160"
+            android:text="新用户注册"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainmap_message"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="欢迎光临翠微商城!"
+        android:elevation="4dp"
+        android:textSize="18dp"
+        android:visibility="visible"/>
+
+    <com.jackchance.yixun.ZAssets.Widget.ImageViewCheckBox
+        android:id="@+id/btn_navigate"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/shape_bg_rect_white"
+        android:padding="8dp"
+        app:checked_bkg="@drawable/ic_nav1"
+        app:default_state="1"
+        app:unchecked_bkg="@drawable/ic_nav2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="200dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <com.jackchance.yixun.ZAssets.Widget.ImageViewCheckBox
+        android:id="@+id/btn_locate"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/shape_bg_rect_white"
+        android:padding="8dp"
+        app:checked_bkg="@drawable/position_cilck"
+        app:default_state="2"
+        app:unchecked_bkg="@drawable/position_cilck"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_qr_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/start_qr"
+        android:background="@color/colorPrimary"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:id="@+id/layout_broadcast"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:id="@+id/select_model_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:gravity="center_horizontal"
+                android:textSize="16dp"
+                android:text="欢迎使用易寻"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/select_model_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击查看活动消息"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_select_model_info"
+        android:id="@+id/mainmap_bottom_layout"
+        android:visibility="gone"/>
+
+    <include layout="@layout/navigate_from_to_layout"
+        android:id="@+id/navigate_buttom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <include android:id="@+id/nearby_layout"
+        layout="@layout/nearby_layout"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

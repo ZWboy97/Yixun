@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/mapselect_bottom_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="美特斯邦威"
+        android:textSize="18dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/mapselect_bottom_floor_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一楼"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/mapselect_bottom_name_textview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/mapselect_bottom_intro_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapselect_bottom_name_textview"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="10dp"
+        android:text="主要研发，设计，生产，销售休闲类服饰" />
+
+    <TextView
+        android:id="@+id/mapselect_botton_linear"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/mapselect_bottom_intro_textview"
+        android:background="@drawable/linear"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/mapselect_botton_linear">
+        <LinearLayout
+            android:id="@+id/mapselect_bottom_moreinfo_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_more_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="进入商铺"
+                android:textColor="@color/blue"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/linear2"/>
+        <LinearLayout
+            android:id="@+id/mapselect_bottom_sethere_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_navi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确认定位"
+                android:textColor="@color/blue"
+                android:textSize="17dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

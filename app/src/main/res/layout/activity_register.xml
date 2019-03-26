@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_12_160"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/common_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/width_5_160"
+            android:paddingRight="@dimen/width_5_160"
+            android:src="@drawable/common_back_normal"/>
+
+        <TextView
+            android:id="@+id/common_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/width_5_160"
+            android:paddingRight="@dimen/width_5_160"
+            android:text="登陆"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/regsiter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/width_18_160"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/reg_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_20_160"
+            android:hint="手机号"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:textSize="14sp"
+            app:et_dividerColor="@color/weixin_bgcolor"
+            app:et_dividerErrorColor="@color/red"
+            app:et_dividerHeight="@dimen/width_1_160"
+            app:et_dividerPadding="@dimen/height_1_160"
+            app:et_labelEnable="true"
+            app:et_supportMode ="charCounter"
+
+            app:et_labelTextSize="10sp"
+            app:et_supportMaxChars="11"
+            app:et_supportTextColor="@color/weixin_bgcolor"
+            app:et_supportTextErrorColor="@color/red"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/height_2_160"
+            android:layout_marginBottom="@dimen/height_2_160"
+
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/id_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="验证码"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:et_dividerColor="@color/weixin_bgcolor"
+                app:et_dividerErrorColor="@color/red"
+                app:et_dividerHeight="@dimen/width_1_160"
+                app:et_dividerPadding="@dimen/height_1_160"
+                app:et_labelEnable="true"
+                app:et_labelTextSize="10sp"
+                app:et_supportMaxChars="6"
+                app:et_supportMode ="charCounter"
+                app:et_supportTextColor="@color/weixin_bgcolor"
+                app:et_supportTextErrorColor="@color/red"
+                />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/id_send_btn"
+                style="@style/Material.Drawable.Ripple.Wave.Light"
+                android:layout_width="@dimen/width_40_160"
+                android:layout_height="@dimen/height_7_160"
+                android:layout_marginLeft="@dimen/width_3_160"
+                android:background="@drawable/common_btn_bg"
+                android:paddingLeft="@dimen/width_3_160"
+                android:paddingRight="@dimen/width_3_160"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:rd_enable="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/id_password_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                app:et_dividerColor="@color/weixin_bgcolor"
+                app:et_dividerErrorColor="@color/red"
+                app:et_dividerHeight="@dimen/width_1_160"
+                app:et_dividerPadding="@dimen/height_1_160"
+                app:et_labelEnable="true"
+                app:et_labelTextSize="10sp"
+                app:et_supportMode ="charCounter"
+
+                app:et_supportTextColor="@color/weixin_bgcolor"
+                app:et_supportTextErrorColor="@color/red"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/width_3_160"
+
+                android:layout_width="@dimen/width_40_160"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/chat_register_password_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    app:cbd_strokeColor="@color/setting_switch_color_selector"                    />
+                <TextView
+                    android:id="@+id/id_addnote_permission_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_1_160"
+                    android:text="显示密码"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_protocol_checkbox_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_1_160"
+        android:layout_marginLeft="@dimen/width_18_160"
+        android:layout_marginTop="@dimen/height_2_160"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/register_protocol_checkbox"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:cbd_strokeColor="@color/setting_switch_color_selector"
+            />
+
+
+        <TextView
+            android:id="@+id/register_protocol_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_1_160"
+            android:text="已同意用户协议"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/id_reg_btn"
+        style="@style/Material.Drawable.Ripple.Wave.Light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_10_160"
+        android:layout_marginLeft="@dimen/width_18_160"
+        android:layout_marginRight="@dimen/width_18_160"
+        android:background="@drawable/common_btn_bg"
+        android:text="注 册"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:rd_enable="true" />
+
+    <com.rey.material.widget.Button
+        android:id="@+id/id_reset_btn"
+        style="@style/Material.Drawable.Ripple.Wave.Light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_10_160"
+        android:layout_marginLeft="@dimen/width_18_160"
+        android:layout_marginRight="@dimen/width_18_160"
+        android:background="@drawable/common_btn_bg"
+        android:enabled="false"
+        android:text="重 置"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:rd_enable="true"
+        />
+
+</LinearLayout>

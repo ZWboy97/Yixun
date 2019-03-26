@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="42dp"
+    android:background="@drawable/skyblue_background"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.jackchance.yixun.ZAssets.Widget.assets.CompleteTextView
+        android:id="@+id/et_keyword"
+        android:layout_width="0.0dip"
+        android:layout_height="35.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_bg_white"
+        android:drawableLeft="@drawable/map_search_hint_icon"
+        android:drawablePadding="5dp"
+        android:hint="室内商铺搜索"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:maxLength="25"
+        android:paddingLeft="12dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="16sp"/>
+
+</LinearLayout>

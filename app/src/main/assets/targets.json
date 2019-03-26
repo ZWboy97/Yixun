@@ -1,0 +1,15 @@
+{
+  "images" :
+  [
+    {
+      "image" : "school.jpg",
+      "name" : "school"
+    },
+    {
+      "image" : "idback.jpg",
+      "name" : "idback",
+      "size" : [8.56, 5.4],
+      "uid" : "uid-string"
+    }
+  ]
+}

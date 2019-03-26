@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/driver_line"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.jackchance.yixun.ZAssets.Widget.assets.CompleteTextView
+        android:id="@+id/et_keyword"
+        android:layout_width="0.0dip"
+        android:layout_height="32.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_bg_white"
+        android:drawableLeft="@drawable/map_search_hint_icon"
+        android:drawablePadding="5dp"
+        android:hint="输入目的位置"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:maxLength="25"
+        android:focusable="false"
+        android:paddingLeft="12dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="13sp"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/icon_mapchange"
+        android:title="地图切换" />
+    <item
+        android:id="@+id/nav_slideshow"
+        android:icon="@drawable/icon_nearby"
+        android:title="周边搜索" />
+    <item
+        android:id="@+id/nav_star"
+        android:icon="@drawable/star3"
+        android:title="收藏位置" />
+    <item
+        android:id="@+id/nav_theme"
+        android:icon="@drawable/icon_setting"
+        android:title="主题切换" />
+
+    <item android:title="特色功能">
+        <menu>
+            <item
+                android:id="@+id/nav_guidance"
+                android:icon="@drawable/icon_guidance"
+                android:title="活动引导" />
+            <item
+                android:id="@+id/nav_ar"
+                android:icon="@drawable/icon_ar"
+                android:title="AR展示" />
+            <item
+                android:id="@+id/nav_seekcar"
+                android:icon="@drawable/icon_car"
+                android:title="反向寻车"/>
+
+        </menu>
+    </item>
+
+</menu>

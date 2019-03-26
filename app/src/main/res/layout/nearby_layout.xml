@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/button_type"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false">
+
+        <Button
+            android:id="@+id/btn_type_food"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:gravity="center"
+            android:text="餐饮"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/driver_line"/>
+
+        <Button
+            android:id="@+id/btn_type_shopping"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="购物"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/driver_line"/>
+
+        <Button
+            android:id="@+id/btn_type_facility"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="娱乐"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/button_facility"
+        android:layout_above="@id/button_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false">
+
+        <Button
+            android:id="@+id/btn_type_lift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:background="@drawable/bg_text_selector"
+            android:gravity="center"
+            android:text="直梯"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/driver_line"/>
+
+        <Button
+            android:id="@+id/btn_type_toilet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="卫生间"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/driver_line"/>
+
+        <Button
+            android:id="@+id/btn_type_louti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:background="@drawable/bg_text_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="扶梯"
+            android:textColor="@color/inner_text_selector"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

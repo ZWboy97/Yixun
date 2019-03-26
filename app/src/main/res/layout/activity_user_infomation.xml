@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jackchance.yixun.UI.UserManager.UserInfomation">
+
+    <RelativeLayout
+        android:background="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/icon_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/userimage"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_below="@id/icon_image"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <LinearLayout
+                android:id="@+id/name_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="用户名："
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editText_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:hint="请输入您的用户名"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone_setting"
+                android:layout_below="@id/name_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="手机号："
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editText_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:hint="输入您的手机号"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sex_setting"
+                android:layout_below="@id/phone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="密码："
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"/>
+                <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editText_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:hint="您可输入新的密码"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_below="@id/sex_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="签名："
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"/>
+                <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/editText_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:hint="您的个性签名"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="保存提交"
+            android:layout_margin="50dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="51dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

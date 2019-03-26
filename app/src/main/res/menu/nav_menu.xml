@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_userinfo"
+        android:icon="@drawable/settings"
+        android:title="用户管理" />
+    <item
+        android:id="@+id/nav_normal_model"
+        android:icon="@drawable/ic_map"
+        android:title="常规界面" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title="地图搜索" />
+    <item
+        android:id="@+id/nav_mapswitch"
+        android:icon="@drawable/mapswitch"
+        android:title="地图切换" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="系统设置" />
+    <item
+        android:id="@+id/nav_landout"
+        android:icon="@drawable/landout"
+        android:title="注销登陆" />
+    <item
+        android:id="@+id/nav_quitout"
+        android:icon="@drawable/quitout"
+        android:title="退出应用" />
+</menu>

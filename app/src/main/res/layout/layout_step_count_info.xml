@@ -1,0 +1,119 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:background="@drawable/shape"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/step_counter"
+                android:layout_marginTop="10dip"
+                style="@style/small_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step_number" />
+
+            <TextView
+                android:id="@id/show_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step_counter"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.3"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/hide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/small_text_style"
+                android:text="@string/distance" />
+
+            <TextView
+                android:id="@id/distance"
+                style="@style/small_text_style"
+                android:gravity="right" />
+
+            <TextView
+                style="@style/small_text_style"
+                android:gravity="right"
+                android:text="@string/km" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/small_text_style"
+                android:text="@string/calories" />
+
+            <TextView
+                android:id="@id/calories"
+                style="@style/small_text_style"
+                android:gravity="right" />
+
+            <TextView
+                style="@style/small_text_style"
+                android:gravity="right"
+                android:text="@string/calorie" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/hide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/small_text_style"
+                android:text="@string/velocity" />
+
+            <TextView
+                android:id="@id/velocity"
+                style="@style/small_text_style"
+                android:gravity="right" />
+
+            <TextView
+                style="@style/small_text_style"
+                android:gravity="right"
+                android:text="@string/kilometer_per_hour" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

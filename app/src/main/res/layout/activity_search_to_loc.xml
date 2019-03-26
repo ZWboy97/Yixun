@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jackchance.yixun.UI.LocateInMap.LocateWays.SearchToLocActivity">
+
+
+    <com.jackchance.yixun.ZAssets.Widget.SearchBar
+        android:id="@+id/locmap_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.fengmap.android.map.FMMapView
+        android:layout_below="@id/locmap_search_bar"
+        android:id="@+id/select_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/select_message"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="输入您的位置搜索定位"
+            android:textSize="16dp"/>
+
+        <include layout="@layout/layouy_mapselect_bottom"
+            android:id="@+id/mapselect_bottom_layout"
+            android:visibility="gone"/>
+    </com.fengmap.android.map.FMMapView>
+
+
+</RelativeLayout>

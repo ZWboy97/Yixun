@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageViewCheckBox">
+        <attr name="default_state" format="integer"/>
+        <attr name="checked_bkg" format="reference"/>
+        <attr name="unchecked_bkg" format="reference"/>
+        <attr name="checked_disabled" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="maxHeightView">
+        <attr name="maxHeightRatio" format="reference|float" />
+        <attr name="maxHeightDimen" format="reference|dimension" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jackchance.yixun.UI.Navigation.MapUI.MainMapActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/ar_navi_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:titleTextColor="@color/white"
+                android:background="@color/colorPrimaryDark">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/userimage"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#ffff"
+                    android:textSize="22dp"
+                    android:text="易寻"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.jackchance.yixun.ZAssets.Widget.SearchBar
+                    android:id="@+id/mainmap_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+            </android.support.v7.widget.Toolbar>
+
+            <com.fengmap.android.map.FMMapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"/>
+
+
+            <include layout="@layout/nomal_layout"
+                android:id="@+id/mainmap_normal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/mainmap_nav_control_layout"
+                android:layout_toEndOf="@+id/mainmap_nav_control_layout" />
+
+
+            <include layout="@layout/nav_control_layout"
+                android:id="@+id/mainmap_nav_control_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <include layout="@layout/search_layout"
+                android:id="@+id/mainmap_search_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
+
+
+
